@@ -1,0 +1,19 @@
+<div>table</div>
+
+  
+<div *ngFor = "let employee of employees" class="employee" >
+    <p class="item-id">{{employee?.id}}</p>
+
+    <p class="item-name">{{employee?.name}}</p>
+
+    <p class="item-age">{{employee?.age}}</p>
+
+    <p class="item-phone">{{employee?.phone}}</p>
+
+    <button class="delete" (click)="removeEmployee(employee.id)">Delete</button>
+    <button class="update" routerLink="/updateEmployee/{{employee.id}}">update</button>
+</div>
+
+<div style="width: 100%; height: 100px; display: flex; justify-content: center; align-items: center;">
+    <button routerLink="/add">Add new employee</button>
+</div>

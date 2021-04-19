@@ -41,6 +41,7 @@ namespace RAA.WEB
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
+                app.ConfigureCors();
             }
             else
             {
@@ -54,6 +55,7 @@ namespace RAA.WEB
             if (!env.IsDevelopment())
             {
                 app.UseSpaStaticFiles();
+                
             }
 
             app.UseRouting();

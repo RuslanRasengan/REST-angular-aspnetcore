@@ -1,0 +1,11 @@
+<div class="wrapper">
+    <input style="margin-bottom: 20px;" type="text" [(ngModel)]="newEmployee.name" placeholder="Name">
+    <br>
+    <input style="margin-bottom: 20px;" type="text" [(ngModel)]="newEmployee.age" placeholder="Age">
+    <br>
+    <input style="margin-bottom: 20px;" type="text" [(ngModel)]="newEmployee.phone" placeholder="Phone">
+    <br>
+    <button style="margin-bottom: 20px;" (click)="postEmployee(newEmployee)">Add this one</button>
+    <br>
+    <button routerLink="/">Back to list</button>
+</div>
